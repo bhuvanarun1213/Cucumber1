@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="51.354915">
+<testcase classname="To Validate the forgot password functionality" name="To Validate the searching account using invalid mobile number" time="20.723958">
+<system-out><![CDATA[Given User must be in facebook login page...................................passed
+And user click the forget password link.....................................passed
+When user give invalid mobile number "4563217890"...........................passed
+And click the search button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To Validate the forgot password functionality" name="To Validate the searching account using invalid mobile number 2" time="18.865363">
+<system-out><![CDATA[Given User must be in facebook login page...................................passed
+And user click the forget password link.....................................passed
+When user give invalid mobile number "7896441236"...........................passed
+And click the search button.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the Login functionality" name="User given the invalid username and invalid password" time="6.251437">
+<failure message="java.lang.AssertionError: Please check&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.stepdefinition.FbLoginStep.user_must_be_redirect_to_invalid_credentials_page(FbLoginStep.java:48)&#13;&#10;&#9;at ✽.User must be redirect to invalid credentials page(file:src/test/resources/feature/FbLogin.feature:13)&#13;&#10;"><![CDATA[Given User must be in the facebook login page...............................passed
+When User given the invalid username and invalid password...................passed
+And User click the login button.............................................passed
+Then User must be redirect to invalid credentials page......................failed
+
+StackTrace:
+java.lang.AssertionError: Please check
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.stepdefinition.FbLoginStep.user_must_be_redirect_to_invalid_credentials_page(FbLoginStep.java:48)
+	at ✽.User must be redirect to invalid credentials page(file:src/test/resources/feature/FbLogin.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="To validate the Login functionality" name="To Validate the login functionality without entering any credentials" time="5.514157">
+<system-out><![CDATA[Given User must be in the facebook login page...............................passed
+When User click the login button without entering any credentials...........passed
+Then User must be redirect to invalid credentials page......................passed
+]]></system-out>
+</testcase>
+</testsuite>
